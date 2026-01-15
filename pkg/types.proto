@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option go_package = "./proto";
+
+package types;
+
+message WAL_Record {
+    uint32  logSequenceNumber = 1;
+    uint32  CRC = 2;
+    bytes   payload = 3;
+}
