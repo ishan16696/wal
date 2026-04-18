@@ -199,13 +199,13 @@ func (w *wal) ReadAll() ([]Record, error) {
 	// 4. Collect valid records, stop at EOF
 
 	allRecords := make([]Record, 0)
-	files, err := os.ReadDir(w.dataDir)
-	if err != nil {
-		return nil, err
-	}
+	// files, err := os.ReadDir(w.dataDir)
+	// if err != nil {
+	// 	return nil, err
+	// }
 
-	for _, file := range files {
-	}
+	// for _, file := range files {
+	// }
 
 	return allRecords, nil
 }
